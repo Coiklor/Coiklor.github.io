@@ -1,0 +1,183 @@
+#totheresult{
+    opacity: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(to right,#03011b, 60%, #6d0f75);
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif; 
+    height: auto;
+    width: auto;
+}
+
+body h1{
+    font-size: 35px;
+    font-style: italic;
+}
+
+body h1 span{
+    color: aqua;
+}
+
+body .start input{
+    display: flex;
+    justify-content: space-between;
+    margin: 13px;
+    border: 5px;
+    border-radius: 5px;
+    width: 22em;
+    height: 3em;
+    border-width: 3px;
+    background-color: #03011b;
+    padding-left: 1em;
+}
+
+body .start .first_name{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+body .start .last_name{
+    color: #ffffff;
+    font-size: 13px;
+}
+
+body .list-countries h2{
+    font-size: 30px;
+    font-style: italic;
+}
+
+body .list-countries label{
+    display: flex;
+    justify-content: left;
+    margin: 13px;
+}
+
+body .list-countries label{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(3, 230, 230);
+}
+
+
+select{
+    border: 2px;
+    background-color: #03011b;
+    flex: 1;
+    padding: 0 .5em;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+
+}
+
+.countries{
+    margin-left: 15px;
+    position: relative;
+    display: flex;
+    width: 20em;
+    height: 3em;
+    line-height: 3;
+    background-color: #5454;
+    overflow: hidden;
+    border-radius: 5px;
+    
+}
+.countries::after{
+    content: "\25BC";
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background-color: #6d0f75;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+.countries:hover{
+    color: aqua;
+}
+
+.result{
+    margin: 10px 10px;
+}
+
+.result button{
+    border-radius: 5px;
+    height: 3em;
+    width: 6em;
+    font-size: 14px;
+    margin-left: 5px;
+    background-color: #6d0f75;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    transition: .25s all ease;
+    font-weight: bold;
+}
+
+.result button:hover{
+    color: aqua;
+} 
+
+.result2{
+    justify-content: left;
+    margin: 15px
+}
+.result2 label{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(3, 230, 230);
+}
+.totheresult{
+    display: flex;
+}
+.result2 .totheresult textarea{
+    background-color: #03011b;
+    border: #03011b;
+    border-radius: 4px;
+    padding: 10px;
+    color: #ffffff;
+    margin-top: 1em;
+    font-size: 12px;
+}
+
+.result2 .totheresult button{
+    border-radius: 5px;
+    height: 3em;
+    width: 6em;
+    font-size: 14px;
+    background-color: #6d0f75;
+    color: #ffffff;
+    border: 0;
+    cursor: pointer;
+    transition: .25s all ease;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 135px;
+    
+}
+.result2 button:hover{
+    color: aqua;
+} 
+
+footer{
+    display: flex;
+    justify-content: left;
+    margin-top: 35em;
+}
+
+footer h4{
+    font-style: italic;
+    font-weight: lighter;
+    color: (rgb(239, 243, 243));
+    font-size: 15px;
+}
+
+footer h4 span{
+    font-weight: bold;
+    color: rgb(3, 230, 230)
+}

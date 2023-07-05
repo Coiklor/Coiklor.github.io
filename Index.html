@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&family=Roboto:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
+        <title>ArrayTest1</title>
+    </head>
+    <body>
+        
+        <div class="inputs">
+            <form class="form" action="" id="form">
+                <div class="start">
+                <h1>Put the <span> names</span></h1>
+
+                    <input name="name" type="text" class="first_name" id="name" placeholder="Name">
+                    <input name="lastname" type="text" class="last_name" id="last_name" placeholder="Last name"> 
+                </div>
+                    <!-- Countries -->
+                    <div class="list-countries">
+                        <h2>Countries</h2>
+                        <label for="search">Choose the country</label>
+                    <div class="countries">
+                        <select id="countries">
+                                <option selected disabled> Choose the country</option>
+                                <option class="c-countries" value="Germany">Germany </option>
+                                <option class="c-countries" value="Czech">Czech</option>
+                                <option class="c-countries" value="Canada">Canada</option>
+                                <option class="c-countries" value="Belgium"> Belgium</option>
+                                <option class="c-countries" value="France">France </option>
+                                <option class="c-countries" value="Romania">Romania</option>
+                                <option class="c-countries" value="Bulgary"> Bulgary</option>
+                                <option class="c-countries" value="Poland"> Poland</option>
+                                <option class="c-countries" value="United Kingdom"> United Kingdom</option>
+                                <option class="c-countries" value="USA">USA</option>
+                        </select>
+                    </div>
+                    </div>
+                    <!-- <input type="text" id="search"  //tried
+                        placeholder="Write the country name to search...">
+                    <div id="allitems"> 
+                    <div class="item" id="1">Germany</div>
+                    <div class="item" id="2">France</div>
+                    <div class="item" id="3">Belgium</div>
+                    <div class="item" id="4">Canada</div>
+                    <div class="item" id="5">Romania</div>
+                    <div class="item" id="6" >Bulgaria</div>
+                    <div class="item" id="7">USA</div>
+                    </div> -->
+                    <div class="result">
+                        <a href="#result" id="totheresult" class="act"></a>
+                        <button type="submit" class="button">Click</button>
+                    </div>
+                    <!-- Result -->
+                    <div class="result2">
+                    <label for="result">Result</label>
+                    <div class="totheresult">
+                    <textarea name="result" id="result" cols="30" rows="10" placeholder="you will see the results.."></textarea>
+                    <button type="copy" class="copy" id="copy">Copy</button>
+                    </div>
+                    </div>
+
+            </form>
+        </div>
+        <footer>
+            <h4>Made by <span>Abraham Moreno</span></h4>
+        </footer>
+        
+        
+        <script src="script.js"></script> 
+    </body>
+</html> 
