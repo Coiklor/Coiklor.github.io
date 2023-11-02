@@ -71,7 +71,15 @@ select{
     cursor: pointer;
     font-size: 16px;
     border-radius: 5px;
+    
+}
 
+select option{
+    height: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+    font-size: 11px;
+    
 }
 
 .countries{
@@ -143,6 +151,8 @@ select{
     color: #ffffff;
     margin-top: 1em;
     font-size: 12px;
+    width:300px;
+    resize: none;
 }
 
 .result2 .totheresult button{
@@ -180,4 +190,25 @@ footer h4{
 footer h4 span{
     font-weight: bold;
     color: rgb(3, 230, 230)
+}
+
+textarea::-webkit-scrollbar{
+    width: 12px;
+    border: 1px;
+    
+}
+
+textarea::-webkit-scrollbar-track {
+    background: #03011b; /* Color de fondo del track */
+}
+
+/* Handle */
+textarea::-webkit-scrollbar-thumb {
+    
+    background: rgb(3, 230, 230); /* Color de fondo del handle (la barra que se mueve) */
+}
+
+/* Handle on hover */
+textarea::-webkit-scrollbar-thumb:hover {
+    background: #6d0f75; /* Color de fondo del handle al pasar el mouse por encima */
 }
