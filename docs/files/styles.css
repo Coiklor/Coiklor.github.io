@@ -172,12 +172,6 @@ select option{
 }
 .result2 button:hover{
     color: aqua;
-} 
-
-footer{
-    display: flex;
-    justify-content: left;
-    margin-top: 35em;
 }
 
 footer h4{

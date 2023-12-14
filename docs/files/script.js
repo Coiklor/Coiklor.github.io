@@ -18,7 +18,7 @@
                         const australia = () => {
                             var emails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@live.com', '@msn.com', 
                             '@outlook.com', "@ymail.com", "@icloud.com" , "@outlook.au", '@mail.au', '@fastmail.com', "@aol.com",
-                            "@yahoo.au", "@live.au", "@hotmail.au", "@gmx.net", "@msn.au" ,"@googlemail.com", "@mailbox.org"];
+                            "@yahoo.au", "@live.com.au", "@hotmail.au", "@gmx.net", "@msn.au" ,"@googlemail.com", "@mailbox.org"];
                             var result = '';
                                 for (var els = 0; els < emails.length; els++) {
                                 result += `\n ${names}` + emails[els] + ' ';
@@ -47,9 +47,9 @@
                         }
                    
                         const germany = () => {
-                            var emails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@live.com', '@msn.com', 
-                            '@outlook.com', "@ymail.com", "@icloud.com" , "@web.de", "@gmx.de", "@outlook.de", '@mail.de',
-                            "@yahoo.de", "@live.de", "@hotmail.de", "@gmx.net", "@msn.de" ,"@googlemail.com", "@mailbox.org"];
+                            var emails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@live.com', '@msn.com', "@t-online.de",
+                            '@outlook.com', "@ymail.com", "@icloud.com" , "@web.de", "@gmx.de", "@outlook.de", '@mail.de', "@freenet.de",
+                            "@yahoo.de", "@live.de", "@hotmail.de", "@gmx.net", "@msn.de" ,"@googlemail.com", "@mailbox.org", "@aol.com"];
                             var result = '';
                                 for (var els = 0; els < emails.length; els++) {
                                 result += `\n ${names}` + emails[els] + ' ';
@@ -72,6 +72,17 @@
                             var emails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@live.com', '@msn.com', "@aol.com", 
                              '@outlook.com', "@ymail.com", "@icloud.com" , "@web.se", "@gmx.se", "@outlook.se", '@mail.se',
                             "@yahoo.se", "@live.se", "@hotmail.se", "@msn.se" ,"@googlemail.com", "@mailbox.org", '@mail.com' , '@me.com'];
+                            var result = '';
+                                for (var els = 0; els < emails.length; els++) {
+                                result += `\n ${names}` + emails[els] + ' ';
+                            }
+                            return textarea.innerHTML = result
+                        }
+
+                        const switzerland = () => {
+                            var emails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@live.com', '@msn.com', "@aol.com", "@gmx.net",
+                            '@outlook.com', "@ymail.com", "@icloud.com" , "@web.ch", "@gmx.ch", "@outlook.ch", '@mail.ch', "@pm.me", "@hispeed.ch",
+                            "@yahoo.ch", "@live.ch", "@hotmail.ch", "@msn.ch" ,"@googlemail.com", "@bluewin.ch", '@mail.com' , '@me.com'];
                             var result = '';
                                 for (var els = 0; els < emails.length; els++) {
                                 result += `\n ${names}` + emails[els] + ' ';
@@ -149,7 +160,7 @@
                             var emails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@live.com', '@msn.com', 
                             '@outlook.com',"@ymail.com", '@telenet.be','@icloud.com', '@mail.be', "@gmx.com", 
                             '@hotmail.be', '@yahoo.be', '@live.be', '@msn.be','@outlook.be', "@googlemail.com",
-                            '@me.com', "@fastmail.com"];
+                            '@me.com', "@fastmail.com", "@pandora.be"];
                             var result = '';
                                 for (var els = 0; els < emails.length; els++) {
                                 result += `\n${names}` + emails[els] + ' ';
@@ -203,7 +214,7 @@
                         }
                         const usa = () => {
                             var emails = ['@gmail.com', '@hotmail.com', '@yahoo.com', '@live.com', '@msn.com', 
-                            '@outlook.com',"@ymail.com", "@googlemail.com",'@me.com', "@fastmail.com", '@me.com', '@mail.com',
+                            '@outlook.com',"@ymail.com", "@googlemail.com",'@me.com', "@fastmail.com", '@aol.com', '@mail.com',
                             "@protonmail.com", "@icloud.com", "@bellsouth.net", "@comcast.net", "@optonline.net" , '@scbglobal.net'];
                             var result = '';
                                 for (var els = 0; els < emails.length; els++) {
@@ -269,6 +280,8 @@
                                 mexico()
                             }else if(thisCountry == 'Sweden'){
                                 sweden()
+                            } else if(thisCountry == "Switzerland"){
+                                switzerland()
                             }
                         }
 
